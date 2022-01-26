@@ -1,4 +1,4 @@
-# Iphone-Photos-to-PC
+# Iphone Photos to PC
 Extract photos from unencrypted iTunes backup of iPhone  
 ## But, How ???
 Simply open terminal/cmd in the backup folder (the one you can find Manifest.db)  
