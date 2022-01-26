@@ -9,5 +9,6 @@ Connect your iphone via usb
 Click on the small Phone icon on the top left corner  
 In Saves, click save now.
 Once finished, in the terminal run python iphone-to-pc-photo-extractor.py  
-or python3 if on macOS.
+or python3 if on macOS.  
+Find your photos in the newly created "Media" folder !  
 Good luck !
