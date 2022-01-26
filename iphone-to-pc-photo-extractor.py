@@ -1,13 +1,15 @@
 import sqlite3
 import os
 import shutil
-
-os.system("@echo off & title Iphone Backup photo dumper for windows ! & cls")
+import sys
+if sys.platform == "win32":
+	os.system("@echo off & title Iphone Backup photo dumper for windows ! & cls")
 print("Iphone Backup photo dumper for windows !"
 	"\nThis tool is able to copy all photos from an unencrypted Iphone backup made with iTunes.")
-os.system("pause")
+if sys.platform == "win32":
+	os.system("pause")
 print("Checking your backups ... (This can take a while !)")
-for x in range()
+#for x in range()
 
 conn = sqlite3.connect('Manifest.db')
 cur = conn.cursor()
@@ -28,4 +30,5 @@ for x in range(0, len(uuid_list)):
 		shutil.copy(uuid[:2] + "\\" + uuid, alias_list[x])
 	except Exception as e:
 		print("Failed to copy %s to %s : %s" % (uuid, alias_list[x], str(e)))
-os.system("pause")
+if sys.platform == "win32":
+	os.system("pause")
